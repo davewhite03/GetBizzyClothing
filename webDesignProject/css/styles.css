@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+    body{
+        background-image: url("https://cdn.pixabay.com/photo/2020/11/07/13/46/rays-5721110_1280.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        text-align: center;
+      
+      }
+nav{ 
+    color: white;
+    background-color:orchid;
+    display: flex;
+   justify-content: space-between;
+   font-family: "Lobster";
+    
+}
+nav h1{
+    font-family: 'Lobster';
+}
+nav a {
+    
+   text-decoration: none;
+   color: white;
+   margin-top: .5rem;
+}
+nav div{
+    width: 10rem;
+   display: flex;
+   justify-content: space-around;
+   
+   
+    
+}
+
+
+
+.main-grid{
+    
+    display: inline-grid;
+     grid-template-areas:
+    "a b b "
+    "a b b "
+    "a b b ";
+}
+.main-grid-cart{
+  display: inline-grid;
+     grid-template-areas:
+    "a "
+    "a "
+    "b ";
+}
+
+.toolbar{
+    grid-area: a;
+    height: 20rem;
+    background-color: orchid;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1rem orchid solid;
+    border-radius: 1rem;
+    margin:5rem 3rem 0 0;
+    animation: down-up 900ms ease-in;
+}
+.toolbar ul{
+    color: white;
+    
+    list-style: none;
+    font-family: "Merriweather";
+}
+.toolbar a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: darkorchid;
+    padding: 1rem;
+    margin: 1rem,auto,1rem;
+    font-family: "Lobster";
+}
+
+.toolbar li{
+    margin:1rem auto 1rem auto;
+}
+.toolbar h2{
+    position: absoloute;
+    background-color: darkorchid;
+    border: .3rem solid darkorchid;
+    color: white;
+    font-family: 'Lobster';
+    border-bottom: .25rem solid mediumorchid;
+    padding:.5rem 1rem 0 1rem;
+    
+    border-radius: 1rem 1rem 0 0;
+    font-size: 2.25rem;
+    
+    
+}
+.shop-item-platform{
+    
+    grid-area: b;
+    display: flex;
+    background-color: orchid;
+    flex-wrap:wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+    border: 1rem darkorchid solid;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 1);
+    animation: right-left 900ms ease-in;
+}
+.shop-item{
+    margin:2rem 2rem 3rem 2rem;
+    display: flex;
+    height: 10rem;
+    width:5rem;
+  color: white;
+    flex-direction: column;
+}
+.category{
+    display: none;
+}
+.shop-item-image{
+  border: .25rem darkorchid solid;
+   height: 5rem;
+   width: 5rem;
+   border-radius: 1rem;
+   background-color: white;
+}
+.btn-primary{
+    display: block;
+    padding: .5rem .25rem .5rem .25rem;
+   border-radius: .7rem;
+   background-color: mediumorchid;
+   color:white;
+}
+
+.cart-item-platform{
+  grid-area: a;
+  display: flex;
+    background-color: orchid;
+    flex-wrap:wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+    
+    border-radius: 1rem 1rem 1rem 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 1);
+    animation: right-left 900ms ease-in;
+    flex-direction: column;
+    
+}
+.cart-item{
+  margin:2rem auto 3rem auto;
+  
+  display: flex;
+    height: 10rem;
+    width:5rem;
+  color: white;
+    flex-direction: column;
+}
+.cart-item-platform h2{
+  position: absoloute;
+  background-color: darkorchid;
+  border: .3rem solid darkorchid;
+  color: white;
+  font-family: 'Lobster';
+  border-bottom: .25rem solid mediumorchid;
+  padding:.5rem 1rem 0 1rem;
+  
+  border-radius: 1rem 1rem 0 0;
+  font-size: 2.25rem;
+}
+
+.cart-item-platform hr{
+  margin-top: 2rem;
+  background-color: darkorchid;
+  border: .01rem darkorchid solid;
+}
+.btn-danger{
+  display: block;
+    padding: .5rem .25rem .5rem .25rem;
+   border-radius: .7rem;
+   background-color: mediumorchid;
+   color:white;
+   margin: 1rem auto 0 auto;
+   
+}
+.cart-quantity{
+
+  width:2rem;
+  margin: .2rem auto .2rem auto;
+  color: white;
+  background-color: mediumorchid;
+  border-radius: 3rem;
+  padding: .5rem;
+}
+.item-size{
+  color: white;
+  background-color: mediumorchid;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+}
+.cart-total h2{
+  border: .3rem solid darkorchid;
+  border-radius: 0 0 1rem 1rem;
+  border-top: .25rem solid mediumorchid;
+}
+
+.btn-purchase{
+  
+    padding: .5rem .25rem .5rem .25rem;
+   border-radius: .7rem;
+   background-color: mediumorchid;
+   color:white;
+
+}
+.cart-total{
+  font-family: 'Lobster';
+  background-color: darkorchid;
+  grid-area: b;
+  border-top: .5rem orchid solid;
+  color: white;
+  border-bottom: .5rem darkorchid solid;
+  border-radius: 0 0 1rem 1rem;
+  margin-top: 5rem;
+}
+.item-id{
+  display:none;
+}
+.btn-plus{
+  padding:.24rem;
+  border-radius: 2rem;
+}
+.btn-minus{
+padding: .25rem;
+border-radius: 2rem;
+}
+
+
+.about-item-platform{
+  color: white;
+  grid-area: a;
+  display: flex;
+    background-color: orchid;
+    flex-wrap:wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+    
+    border-radius: 1rem 1rem 1rem 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 1);
+    animation: right-left 900ms ease-in;
+    flex-direction: column;
+    
+}
+.about-item-platform h2{
+  position: absoloute;
+  background-color: darkorchid;
+  border: .3rem solid darkorchid;
+  color: white;
+  font-family: 'Lobster';
+  border-bottom: .25rem solid mediumorchid;
+  padding:.5rem 1rem 0 1rem;
+  
+  border-radius: 1rem 1rem 0 0;
+  font-size: 2.25rem;
+}
+
+@keyframes right-left {
+    0%{
+      transform: skewX(-53deg) translateX(200px);
+      opacity: 0;
+    }
+  
+    60%{
+      transform: translateX(0px);
+  
+    }
+    62%{
+      transform: skewX(0deg) translateX(-10px);
+    }
+    100%{
+      transform: skew(0deg);
+      opacity: .8;
+    }
+  
+  
+  }
+
+
+  @keyframes down-up {
+
+    0%{
+      transform:  translateY(200px);
+      opacity: 0;
+    }
+    62%{
+      transform: skewX(0deg) translateX(-10px);
+    }
+    100%{
+      transform: skew(0deg);
+      opacity: 1;
+    }
+  
+  }
+  
+  
+  
